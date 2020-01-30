@@ -1,9 +1,9 @@
 import requests as rq
 
 def row(api_endpoint):
-'''This func takes APIurl adn goes to listen endpoint of OpenSky API .
-flattens the nested information inside of a json documents.
-It is possible to add country filter'''
+    '''This func takes APIurl adn goes to listen endpoint of OpenSky API .
+    flattens the nested information inside of a json documents.
+    It is possible to add country filter'''
     resp = rq.get(api_endpoint)
     if resp.status_code != 200:
         # something went wrong.
